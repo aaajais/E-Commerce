@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  /* align items center vertically and horizontally  */
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items:center !important;
+    height: 100vh;
+    
+    
+    
+  }
+  .form{
+    position: relative;
+    width: 350px;
+    height: 550px;
+    margin-left: 25%;
+    background-color: rgb(199, 165, 52);
+    box-shadow: 0 5px 30px rgb(14, 13, 13);
+    border-radius: 20px 20px 20px 20px;
+    
+   
+  }
+  .form::before,.form::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(45deg,rgb(192, 13, 13),rgb(241, 3, 3),blue,purple,orange);
+    background-size: 400% 400%;
+    /* width: calc(100%+6px);
+    height: calc(100%+6px); */
+    border-radius: 20px;
+    z-index: -1;
+    animation: animate 3s ease alternate infinite;
+    
+
+  }
+  .form::after{
+    filter: blur(20px);
+  }
+  .btn button {
+    padding: 3px;
+    margin: 30px 0px 40px 30px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+  }
+  .formGroup{
+    display: flex;
+    justify-content: center;
+  }
+  .formGroup input{
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(10, 10, 10);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    /* font-weight: bold; */
+    /* background-color: transparent; */
+    color: rgb(8, 8, 8);
+  }
+  input:focus {
+    outline: none !important;
+    border-bottom: 2px solid rgb(8, 74, 173);
+    font-size: 17px;
+    /* font-weight: bold; */
+    color: rgb(8, 8, 8);
+  }
+  ::placeholder {
+    color: rgb(0, 0, 0);
+  }
+  .checkBox{
+    display: flex;
+    justify-content: center;
+    margin: 16px!important;
+    color: white;
+  }
+   
+  #checkbox{
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    color: white;
+  }
+  .text{
+    color: rgb(199, 197, 197);
+    font-size: 13px;
+    color: white;
+  }
+  .btn:hover{
+      background-color: rgb(215, 231, 215);
+  }
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   position: center;
+   margin-left: 100px;
+    margin-top: 5px;
+ }
+ .btn-info {
+  color: #000;
+  background-color: #d37022;
+  border-color: #0d27f0;
+ 
+}
+  
+   
+ 

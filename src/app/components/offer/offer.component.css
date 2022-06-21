@@ -1,0 +1,12 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:9999;
+    background-color: rgb(241, 200, 18); 
+     color: rgb(19, 18, 18);
+     text-shadow: 2px 2px 4px #f5f1f1;
+}
+.xyz{
+    margin-top: 50%;
+}

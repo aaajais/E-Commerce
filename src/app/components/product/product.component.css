@@ -1,0 +1,77 @@
+.carousel-item{
+    height: 500px;
+    background-image: cover;
+ 
+  
+}
+
+.card-img:hover{
+    transform: scale(2);
+   
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    background-color: DodgerBlue;
+    background-color: #f1f1f1;
+  margin: 5px;
+  padding: 10px;
+  font-size: 5px;
+}
+
+.carousel-inner{
+    margin: 5px;
+    padding: 10px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+    padding-right: 10%;
+    padding-left: 150px;
+    background-color: rgb(218, 214, 214);
+    box-shadow: 0 5px 30px rgb(14, 13, 13);
+   
+    
+    
+  }
+  .card img{
+      height: 150px;
+      width: 150px;     
+      margin-bottom: 15px auto;
+      margin-left: 55px;      
+      margin-top: 15px;
+    border-radius: 50px 50px;
+    
+    
+    
+ 
+     
+  }
+  .card img:hover{
+      transform: scale(1.6);
+  }
+
+  
+.pic{
+    
+    padding: 30px;
+    margin-left: 5px;
+   padding-left: 5%;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0 5px 30px rgb(14, 13, 13);
+   border-radius: 50px 50px;
+   
+}
+.card{
+    border-radius: 50px 50px;
+    
+}
+/* .skincare{
+    margin-left: 550px;
+} */
+

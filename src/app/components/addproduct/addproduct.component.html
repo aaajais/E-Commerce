@@ -1,0 +1,84 @@
+<!-- 
+  <h2>ADD PRODUCT</h2>
+  <div class="form"> -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  ADD PRODUCTS
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #postForm="ngForm" autocomplete="off" (ngSubmit)="addProduct(postForm)">
+          <div class="form-group">
+            <label for="input_id"><b>Id</b></label>
+            <input type="number" name="id" [(ngModel)]="productDetails.id" class="form-control" id="input_id"
+              placeholder="Enter Id"><br>
+          </div>
+          <div class="form-group">
+            <label for="input_title"><b>Title</b></label>
+            <input type="text" name="title" [(ngModel)]="productDetails.title" class="form-control" id="input_title"
+              placeholder="Enter Title"><br>
+          </div>
+          
+          <div class="form-group">
+            <label for="input_img"><b>Image Path</b></label>
+            <input type="text" name="img" [(ngModel)]="productDetails.img" class="form-control" id="input_img"
+              placeholder="Enter Image Path"><br>
+          </div>
+          <div class="form-group">
+            <label for="input_price"><b>Price</b></label>
+            <input type="text" name="price" [(ngModel)]="productDetails.price" class="form-control" id="input_price"
+              placeholder="Enter Price"><br>
+          </div>
+          <div class="form-group">
+            <label for="input_description"><b>Description</b></label>
+            <textarea class="form-control" name="description" [(ngModel)]="productDetails.des"
+              id="input_description" rows="3"></textarea>
+          </div>
+          <br>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="jumbotron">
+
+    <table class="table">
+      <tr>
+        <th>S.No</th>
+        <th>title</th>
+        <th>Description</th>
+        <th>Price</th>
+
+
+
+      </tr>
+      <tr *ngFor="let val of productList;let i=index">
+        <td>{{i+1}}</td>
+        <td>{{val.title}}</td>
+        <td>{{val.des}}</td>
+        <td>{{val.price|currency:"INR"}}</td>
+        <td><button class="btn btn-danger" (click)="deleteItem(val)"><i class="fa-solid fa-trash"></i></button></td>
+        <td><button class="btn btn-danger" (click)="editPost(val)" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+      </tr>
+    </table>
+
+  </div>
+</div>

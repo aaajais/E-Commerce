@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="form">
+
+      <img src="../../../assets/img/KID-ZONE (2).png" alt="" >
+      <div><h3 class="text-center text-light">SIGN UP</h3></div>
+      <form class="mt-2">
+        <div class="formGroup">
+          <input type="text" id="userName" placeholder="User Name" autocomplete="off"[(ngModel)]='user' name="user">
+        </div>
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off" [(ngModel)]="email" name="email">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required autocomplete="off" [(ngModel)]="password" name="password">
+        </div>
+        
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <button type="button" class="btn btn-info rounded-pill w-75 text-center" (click)="registered()">REGISTER</button>
+        </div>
+ 
+      </form>
+        
+    
+ 
+    </div>
+  </div>

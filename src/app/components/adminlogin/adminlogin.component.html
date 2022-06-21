@@ -1,0 +1,37 @@
+<div class="container" style="width: 30%;">
+    <div class="formWraper">
+
+        <!-- Left section of responsive registration form -->
+
+        <div class="formDiv">
+            <img src="../../../assets/img/KID-ZONE (2).png" alt="" >
+           
+            <h2>welcome to kid-zone</h2>
+
+            <!--Horizontal Line-->
+            <hr>
+            <!-- <div class="orDiv">Or</div> -->
+
+            <p class="text">Sign IN with Email Address</p>
+            <form autocomplete="off" >
+                <div class="formGroup">
+                    <i class="far fa-user"></i>
+                    <!-- <input type="text" name="name" id="name" placeholder="Enter Name" formControlName="user"> -->
+                </div>
+                <div class="formGroup">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" 
+                    [(ngModel)]="email">
+                </div>
+                <div class="formGroup">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="Enter Password"
+                    [(ngModel)]="password">
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <span class="text">I Agree with Term & Conditions.</span>
+                </div>
+                <button type="submit" class="btn" (click)="login()">SIGN IN</button>
+            </form>
+       
